@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
           $salt = 'k*jJlrsH:cY]O^Z^/J2)Pz{)qz:+yCa]^+V0S98Zf$sV[c@hKKG07Q{utg%OlODS';
 
           // hash salt and password together
-          $hashedPwd = md5($salt . $password);
+          $hashedPwd = md5($salt . $pwd);
 
           //Inserting into database
           $sql = "INSERT INTO users (firstName, lastName,
@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
               '$email', '$hashedPwd');";
 
           mysqli_query($conn, $sql);
-          header("Location: ../signup.php?signup=success");
+          header("Location: ../index.php?signup=success");
           exit();
         }
       }

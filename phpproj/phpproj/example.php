@@ -16,10 +16,7 @@ if ($config_debug)
     ini_set('display_startup_errors', '1');
   }
 
-
 require_once('error.php');
-
-
 
 interface database_access
   {

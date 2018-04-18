@@ -5,6 +5,11 @@
 <section class="main-container">
   <div class="main-wrapper">
     <h2>Welcome to the AEIS portal</h2>
+    <?php
+      if (isset($_SESSION['u_id'])) {
+        echo "You are logged in!";
+      }
+     ?>
   </div>
 </section>
 
