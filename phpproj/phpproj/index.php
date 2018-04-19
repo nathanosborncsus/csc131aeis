@@ -3,15 +3,22 @@
 ?>
 
 <section class="main-container">
+
   <div class="main-wrapper">
-    <h2>Welcome to the AEIS portal</h2>
+
+<form class="questionnaire-form">
+    <h2><img src="https://puu.sh/A61xq/ba3684be78.png"></img></h2>
+        <h2>Welcome to the AEIS portal</h2>
     <?php
+/*
       if (isset($_SESSION['u_id'])) {
         echo "You are logged in!";
       }
+      */
      ?>
   </div>
 </section>
+</form>
 
 <?php
 include_once 'footer.php';

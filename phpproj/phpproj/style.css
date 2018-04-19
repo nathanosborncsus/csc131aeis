@@ -101,15 +101,51 @@ input, select {
     vertical-align:middle;
 }
 
+
 /* Our CSS Code */
 
+/**  MAIN WRAPPER section**/
 .main-wrapper {
   margin: - auto;
   width: 1000px;
+  overflow:auto;
 }
 
+.main-wrapper ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  line-height:60px;
+
+}
+
+.main-wrapper li{
+  float:left;
+}
+
+.main-wrapper li a:hover {
+  color:#fff;
+  opacity:0.5;
+  font-size:14px;
+}
+
+.main-wrapper ul li a{
+  background:#2d2d2d;
+  text-decoration:none;
+  width:130px;
+  display:block;
+  text-align:center;
+  color:#f2f2f2;
+  font-size:14px;
+  font-family:arial;
+  font-weight:bold;
+
+}
+
+/**  END OF MAIN WRAPPER SECTION**/
+
 body {
-  background-color: #ccc;
+  background-color: #dddddd;
 }
 
 header nav {
@@ -135,12 +171,14 @@ header nav ul li a {
 }
 
 header .nav-login {
-  float: right;
+  float: left;
 }
 
 header .nav-login form {
   float: left;
+  margin-right:100px;
   padding-top: 15px;
+  padding-left: 15px;
 }
 
 header .nav-login form input {
@@ -149,7 +187,7 @@ header .nav-login form input {
   height: 30px;
   padding: 0px 10px;
   margin-right: 10px;
-  border: none;
+  border: 1px;
   background-color: #ccc;
   font-family: arial;
   font-size: 14px;
@@ -157,8 +195,9 @@ header .nav-login form input {
   line-height: 30px;
 }
 
+
 header .nav-login form button {
-  float: left;
+  float: right;
   width: 60px;
   height: 30px;
   margin-right: 10px;
@@ -189,6 +228,13 @@ header .nav-login a {
   cursor: pointer;
 }
 
+nav-signup {
+
+float:right;
+
+}
+
+
 .main-container {
   padding-top: 40px;
 }
@@ -207,6 +253,14 @@ header .nav-login a {
   width: 400px;
   margin: 0 auto;
   padding-top: 30px;
+  max-width:500px;
+  margin:2rem auto;	/* Centering */
+  border:1px solid black;
+  padding: 2rem;
+  background: white;;
+  -moz-box-shadow: 1px 2px 3px rgba(0,0,0,1);		/* Delivers soft shadow */
+  -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,1);
+  box-shadow: 1px 2px 3px rgba(0,0,0,1);
 }
 
 .signup-form input {
@@ -239,24 +293,76 @@ header .nav-login a {
   background-color: #111;
 }
 
+.custheader {
+  padding-top:20px;
+  font-size: 24px;
+}
 
 /* Richard CSS */
 .questionnaire-form
 {
-	max-width:500px;
+	max-width:800px;
 	margin:2rem auto;	/* Centering */
-	border:2px solid black;
+	border:1px solid black;
+  border-radius: 5px;
 	padding: 2rem;
-	background: white;;
-	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,1);		/* Lines 8-10 delivers soft shadow to this form */
+	background: white;
+  /**** Commented out drop shadow for now
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,1);
 	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,1);
 	box-shadow: 1px 2px 3px rgba(0,0,0,1);
+  *****/
+  font-size:20px;
 }
+.questionnaire-form h2
+{
+
+  font-size:30px;
+}
+
+.dashboard {
+
+	margin:2rem auto;	/* Centering */
+  padding: 2rem;
+  border-radius: 5px;
+  max-width:50px;
+}
+
+tr:nth-child(even){
+  background-color: #fff;
+}
+
+tr:nth-child(odd){
+  background-color: #ddd;
+}
+
+table {
+  width:800px;
+
+}
+
+th{
+  text-align:center;
+  background: #ffffa8;
+}
+
+td{
+
+    text-align:center;
+}
+table, th, td {
+  border:1px solid #000;
+  padding: 10px;
+}
+
+
 
 textarea{
 	display:block;
 	padding: .5rem;
 }
+
+
 
 /*********************************
 * Keeping this here, in case we want to have differing

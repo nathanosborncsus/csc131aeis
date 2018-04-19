@@ -8,11 +8,11 @@
 
         <!-- Handles webpage color outside of the questionnaire form.
         Questionnaire form remains white for distinction. -->
-        <body style="background-color:#ccccff;">
+        <body style="background-color:#dddddd;">
 
 <section class="main-container">
             <div class="main-wrapper">
-              <h2>New Assessment</h2>
+              <!-- <h2>New Assessment</h2> -->
             </div>
 
 
@@ -25,25 +25,30 @@
             <form class="questionnaire-form">
 
 <div.a>
-        <h1>CSC 131 - Questionnaire Prototype</h1>
+  <div class="custheader"
+        <h1> <center>Accessibility Exposure & Impact </center> </h1><br><br>
+  </div>
         <h2></h2>
 
         <!--Had to put img id instead of img-src, because on main.js I had
         to make a changeImage function (called on button press) to change
         src each time -->
-        <img id="prog-bar" src="https://puu.sh/zRygn/b75091f1f1.png">
+  <center>          <img id="prog-bar" src="https://puu.sh/zRygn/b75091f1f1.png"> </center><br>
 
 
 
         <br><br>
+        <!--  Commenting out Buttons for visibility but
+        keeping these lines for debugging purposes
         <button onclick="hide()">Hide</button>
         <button onclick="show()">Show</button>
+        -->
 
 
 </div.a>
 
 <div class="questions" id="question1">
-    <p>1. Does the system provide a service that is essential to the general public?</p>
+    <p>1. Does the system provide a service that is essential to the general public?</p><br><br>
 
         <input class="option" type="radio" name="question1" value=80>Yes<br>
         <input class="option" type="radio" name="question1" value=5>No<br>
@@ -53,7 +58,7 @@
 </div>
 
 <div class="questions" id="question2">
-    <p>2. Are citizens required to use the system to gain access to a service?</p>
+    <p>2. Are citizens required to use the system to gain access to a service?</p><br>
 
         <input class="option" type="radio" name="question2" value=80>Yes<br>
         <input class="option" type="radio" name="question2" value=5>No<br>
