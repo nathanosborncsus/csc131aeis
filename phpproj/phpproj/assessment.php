@@ -49,6 +49,7 @@
         <input class="option" type="radio" name="question1" value=5>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(1), changeImage(1)">Next</button>
 
+
 </div>
 
 <div class="questions" id="question2">
@@ -57,6 +58,7 @@
         <input class="option" type="radio" name="question2" value=80>Yes<br>
         <input class="option" type="radio" name="question2" value=5>No<br>
         <br><br><button type='button' id="nextBtn" onclick="nextQuestion(2), changeImage(2)">Next</button>
+        <button type='button' id="prevBtn" onclick="prevQuestion(1), changeImage(1)">Previous</button>
 
 </div>
 
@@ -67,6 +69,7 @@
         <input class="option" type="radio" name="question3" value=60>Yes<br>
         <input class="option" type="radio" name="question3" value=5>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(3), changeImage(3)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(2), changeImage(2)">Previous</button>
 
 </div>
 
@@ -77,6 +80,7 @@
         <input class="option" type="radio" name="question4" value=80>Yes<br>
         <input class="option" type="radio" name="question4" value=5>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(4), changeImage(4)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(3), changeImage(3)">Previous</button>
 
 </div>
 
@@ -87,6 +91,7 @@
         <input class="option" type="radio" name="question5" value=60>Yes<br>
         <input class="option" type="radio" name="question5" value=5>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(5), changeImage(5)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(4), changeImage(4)">Previous</button>
 
 </div>
 
@@ -97,6 +102,7 @@
         <input class="option" type="radio" name="question6" value=40>Yes<br>
         <input class="option" type="radio" name="question6" value=5>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(6), changeImage(6)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(5), changeImage(5)">Previous</button>
 
 </div>
 
@@ -107,6 +113,7 @@
         <input class="option" type="radio" name="question7.1" value=0>Yes<br>
         <input class="option" type="radio" name="question7.1" value=200>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(7), changeImage(7)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(6), changeImage(6)">Previous</button>
 
 </div>
 
@@ -117,6 +124,7 @@
         <input class="option" type="radio" name="question7.2" value=80>Yes<br>
         <input class="option" type="radio" name="question7.2" value=20>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(8), changeImage(8)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(7), changeImage(7)">Previous</button>
 
 </div>
 
@@ -127,6 +135,7 @@
         <input class="option" type="radio" name="question8" value=5>Yes<br>
         <input class="option" type="radio" name="question8" value=250>No<br>
 		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(9), changeImage(9)">Next</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(8), changeImage(8)">Previous</button>
 
 </div>
 
@@ -137,6 +146,7 @@
         <input class="option" type="radio" name="question9" value=50>Yes<br>
         <input class="option" type="radio" name="question9" value=5>No<br>
 		<br><br><button onclick="submitAnswers(), changeImage(10)">Submit</button>
+    <button type='button' id="prevBtn" onclick="prevQuestion(9), changeImage(9)">Previous</button>
 
 
 </div>

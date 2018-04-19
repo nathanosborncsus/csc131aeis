@@ -57,6 +57,18 @@ function nextQuestion(qNum)
 
 }
 
+function prevQuestion(cQNum)
+{
+
+	var elements = document.getElementsByClassName("questions");
+	var qNum = cQNum - 1;
+	if (cQNum == 0)
+		qNum = 9;
+	elements[qNum].style.display = "block";
+	elements[cQNum].style.display = "none";
+
+}
+
 
 
 function changeImage(imgNum)
