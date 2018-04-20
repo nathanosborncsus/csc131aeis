@@ -3,14 +3,11 @@
 if (isset($_POST['submit'])) {
   include_once 'db.inc.php';
 
-  echo 'Connected successfully.';
-
   $first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
   $last_name = mysqli_real_escape_string($conn, $_POST['last_name']);
   $email = mysqli_real_escape_string($conn, $_POST['email']);
   $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 
-  echo 'Connected successfully.';
 
 //Error handling for empty form value
   if (empty($first_name) ||

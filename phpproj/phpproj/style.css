@@ -369,5 +369,13 @@ textarea{
 formats for the next button.
 *********************************/
 #nextBtn{
-	width:100%
+	width:20%;
+}
+
+#prevBtn{
+	width:20%;
+}
+
+#subBtn{
+  width:20%;
 }

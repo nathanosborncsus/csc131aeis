@@ -123,12 +123,13 @@ function submitAnswers()
 {
 	var totalRadios = document.getElementsByClassName("option");
 	var totalValue = 0;
-	for (var i = 0, length = totalRadios.length; i < length; i++)
+	var length = totalRadios.length;
+	for (var i = 0; i < length; i++)
 	{
 		if (totalRadios[i].checked)
 		{
-			var midTerm = Number(totalRadios[i].value);
-			totalValue += midTerm;
+			var midterm = Number(totalRadios[i].value);
+			totalValue += midterm;
 		}
 	}
 	alert("Total Score: " + totalValue);

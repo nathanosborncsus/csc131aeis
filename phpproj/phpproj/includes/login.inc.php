@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
           $_SESSION['u_last'] = $row['lastName'];
           $_SESSION['u_email'] = $row['email'];
           $_SESSION['u_id'] = $row['user_id'];
-          header("Location: ../index.php?login=success");
+          header("Location: ../dashboard.php");
           exit();
         }
       }
