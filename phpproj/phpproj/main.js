@@ -45,7 +45,7 @@ function nextQuestion(qNum)
 		{
 			if (qValue[i].checked)
 			{
-				if (qValue[i].value == 200)
+				if (qValue[i].value == 0)
 					qNum = 8;
 				break;
 			}
@@ -122,15 +122,33 @@ if (imgNum == 10){
 function submitAnswers()
 {
 	var totalRadios = document.getElementsByClassName("option");
-	var totalValue = 0;
+    var namedSystem = document.getElementsByClassName("sysName");
+	var systemName = namedSystem[0].value;
+	var finalArray = [0, 0, 0, 0, 0, 0, 0, -1, 0, 0];
 	var length = totalRadios.length;
+	var arrayCounter = 0;
 	for (var i = 0; i < length; i++)
 	{
+		if (arrayCounter == 7)
+		{
+			if (totalRadios[14].checked == false && totalRadios[15].checked == false)
+			{
+				arrayCounter++;
+			}
+		}
 		if (totalRadios[i].checked)
 		{
-			var midterm = Number(totalRadios[i].value);
-			totalValue += midterm;
+			var midterm = totalRadios[i].value;
+			finalArray[arrayCounter] = midterm;
+			arrayCounter++;
 		}
 	}
-	alert("Total Score: " + totalValue);
+	if (arrayCounter < 10)
+	{
+		alert("Assessment not complete: restarting assessment");
+	}
+	else
+	{
+		alert(systemName + " " + finalArray[0] + " " + finalArray[1] + " " + finalArray[2] + " " + finalArray[3] + " " + finalArray[4] + " " + finalArray[5] + " " + finalArray[6] + " " + finalArray[7] + " " + finalArray[8] + " " + finalArray[9]);
+	}
 }
