@@ -124,7 +124,7 @@ function submitAnswers()
 	var totalRadios = document.getElementsByClassName("option");
     var namedSystem = document.getElementsByClassName("sysName");
 	var systemName = namedSystem[0].value;
-	var finalArray = [0, 0, 0, 0, 0, 0, 0, -1, 0, 0];
+	var finalArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 	var length = totalRadios.length;
 	var arrayCounter = 0;
 	for (var i = 0; i < length; i++)
