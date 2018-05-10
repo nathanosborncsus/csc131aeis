@@ -63,9 +63,7 @@ function prevQuestion(cQNum)
 	var elements = document.getElementsByClassName("questions");
 	var qNum = cQNum - 1;
 	if (cQNum == 0)
-	{
 		qNum = 9;
-	}
 	elements[qNum].style.display = "block";
 	elements[cQNum].style.display = "none";
 
@@ -124,9 +122,9 @@ if (imgNum == 10){
 function submitAnswers()
 {
 	var totalRadios = document.getElementsByClassName("option");
-    var namedSystem = document.getElementsByClassName("sysName");
+  var namedSystem = document.getElementsByClassName("sysName");
 	var systemName = namedSystem[0].value;
-	var finalArray = [0, 0, 0, 0, 0, 0, 0, -1, 0, 0];
+	var finalArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 	var length = totalRadios.length;
 	var arrayCounter = 0;
 	for (var i = 0; i < length; i++)
@@ -149,8 +147,12 @@ function submitAnswers()
 	{
 		alert("Assessment not complete: restarting assessment");
 	}
+	else if (systemName != undefined)
+	{
+		alert("No Assessment Name: restarting assessment");
+	}
 	else
-	{	
+	{
 		alert(systemName + " " + finalArray[0] + " " + finalArray[1] + " " + finalArray[2] + " " + finalArray[3] + " " + finalArray[4] + " " + finalArray[5] + " " + finalArray[6] + " " + finalArray[7] + " " + finalArray[8] + " " + finalArray[9]);
 	}
 }

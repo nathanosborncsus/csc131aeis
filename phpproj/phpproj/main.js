@@ -122,7 +122,7 @@ if (imgNum == 10){
 function submitAnswers()
 {
 	var totalRadios = document.getElementsByClassName("option");
-    var namedSystem = document.getElementsByClassName("sysName");
+  var namedSystem = document.getElementsByClassName("sysName");
 	var systemName = namedSystem[0].value;
 	var finalArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 	var length = totalRadios.length;
@@ -146,6 +146,10 @@ function submitAnswers()
 	if (arrayCounter < 10)
 	{
 		alert("Assessment not complete: restarting assessment");
+	}
+	else if (systemName != undefined)
+	{
+		alert("No Assessment Name: restarting assessment");
 	}
 	else
 	{
