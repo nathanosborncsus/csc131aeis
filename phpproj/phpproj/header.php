@@ -60,7 +60,11 @@ session_start();
                 <input type="password" name="pwd" placeholder="Password">
                 <button type="submit" name="submit">Login</button>
             </form>
-              <a href="signup.php">Sign up</a>';
+            
+            <form action="signup.php">
+                <button type="submit" name="Signup">Signup</button>
+              </form>';
+
             }
           ?>
 

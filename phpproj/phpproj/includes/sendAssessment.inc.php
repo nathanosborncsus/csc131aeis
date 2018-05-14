@@ -1,7 +1,5 @@
 <?php
 
-echo "<script>alert('$assess_name');</script>";
-
 if (isset($_POST['name'])) {
   include_once 'db.inc.php';
 
@@ -18,7 +16,6 @@ if (isset($_POST['name'])) {
   $q10 = mysqli_real_escape_string($conn, $_POST['q10']);
   $uid = mysqli_real_escape_string($conn, $_POST['uid']);
 
-  echo "<script>alert('$assess_name');</script>";
 
 
 //Error handling for empty form value
@@ -35,7 +32,6 @@ if (isset($_POST['name'])) {
       empty($q10)) {
         //header("Location: ../assessment.php?data=missing");
         //returns user to signup page
-        echo "<script>console.log( 'Debug Objects 1: " . $assess_name . "' );</script>";
         exit(1);
   } else {
           $sql = "INSERT INTO assessments (report_name, question_1, question_2, question_3, question_4, question_5, question_6, question_7, question_8, question_9, question_10, report_owner) VALUES ('$assess_name', '$q1', '$q2', '$q3', '$q4', '$q5', '$q6', '$q7', '$q8', '$q9', '$q10', '$uid' );";

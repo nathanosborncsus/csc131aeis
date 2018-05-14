@@ -21,3 +21,5 @@ if (isset($_POST['submit'])) {
     }
   }
 }
+
+<button onclick="myFunction()">Click me</button>

@@ -25,18 +25,18 @@
 
 <div.a>
   <div class="custheader"
-        <h1> <center>Accessibility Exposure & Impact </center> </h1><br><br>
+        <h1> <center>Accessibility Exposure & Impact </center> </h1><br>
   </div>
         <h2></h2>
 
         <!--Had to put img id instead of img-src, because on main.js I had
         to make a changeImage function (called on button press) to change
         src each time -->
-  <center>          <img id="prog-bar" src="https://puu.sh/zRygn/b75091f1f1.png"> </center><br>
+  <center><br>          <img id="prog-bar" src="https://puu.sh/zRygn/b75091f1f1.png"> </center><br>
 
 
 
-        <br><br>
+
         <!--  Commenting out Buttons for visibility but
         keeping these lines for debugging purposes
         <button onclick="hide()">Hide</button>
@@ -46,18 +46,19 @@
 
 </div.a>
 <div class="assessmentName" id="aName">
-    <p>Name of System:</p><br>
+    <center><p> Name of System:</p><br><center>
 
         <input class="sysName" type="text" name="systemName" id="inputName"><br><br><br>
 </div>
 
-
+<form class=assessmentcontainer>
+<div class="assess-styledcontainer">
 <div class="questions" id="question1">
     <p>1. Does the system provide a service that is essential to the general public?</p><br><br>
 
         <input class="option" type="radio" name="question1" value=1>Yes<br>
         <input class="option" type="radio" name="question1" value=-1>No<br>
-		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(1), changeImage(1)">Next</button>
+		<br><br><button type='button' id="nextBtn" onclick="nextQuestion(1), changeImage(1)" >Next</button>
 
 
 </div>
@@ -67,8 +68,9 @@
 
         <input class="option" type="radio" name="question2" value=1>Yes<br>
         <input class="option" type="radio" name="question2" value=-1>No<br>
-        <br><br><button type='button' id="prevBtn" onclick="prevQuestion(1), changeImage(1)">Previous</button>
+        <br><br><button type='button' id="prevBtn" onclick="prevQuestion(1), changeImage(1)" >Previous</button>
         <button type='button' id="nextBtn" onclick="nextQuestion(2), changeImage(2)">Next</button>
+
 
 
 </div>
@@ -79,8 +81,8 @@
 
         <input class="option" type="radio" name="question3" value=1>Yes<br>
         <input class="option" type="radio" name="question3" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(2), changeImage(2)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(3), changeImage(3)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(2), changeImage(2)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(3), changeImage(3)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 
 </div>
@@ -91,8 +93,8 @@
 
         <input class="option" type="radio" name="question4" value=1>Yes<br>
         <input class="option" type="radio" name="question4" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(3), changeImage(3)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(4), changeImage(4)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(3), changeImage(3)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(4), changeImage(4)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 </div>
 
@@ -102,8 +104,8 @@
 
         <input class="option" type="radio" name="question5" value=1>Yes<br>
         <input class="option" type="radio" name="question5" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(4), changeImage(4)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(5), changeImage(5)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(4), changeImage(4)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(5), changeImage(5)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 
 </div>
@@ -114,8 +116,8 @@
 
         <input class="option" type="radio" name="question6" value=1>Yes<br>
         <input class="option" type="radio" name="question6" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(5), changeImage(5)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(6), changeImage(6)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(5), changeImage(5)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(6), changeImage(6)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 
 </div>
@@ -126,8 +128,8 @@
 
         <input class="option" type="radio" name="question7.1" value=1>Yes<br>
         <input class="option" type="radio" name="question7.1" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(6), changeImage(6)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(7), changeImage(7)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(6), changeImage(6)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(7), changeImage(7)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 
 </div>
@@ -138,8 +140,8 @@
 
         <input class="option" type="radio" name="question7.2" value=1>Yes<br>
         <input class="option" type="radio" name="question7.2" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(7), changeImage(7)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(8), changeImage(8)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(7), changeImage(7)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(8), changeImage(8)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 
 </div>
@@ -150,8 +152,8 @@
 
         <input class="option" type="radio" name="question8" value=1>Yes<br>
         <input class="option" type="radio" name="question8" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(8), changeImage(8)">Previous</button>
-    <button type='button' id="nextBtn" onclick="nextQuestion(9), changeImage(9)">Next</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(8), changeImage(8)" >Previous</button>
+    <button type='button' id="nextBtn" onclick="nextQuestion(9), changeImage(9)" style="border: 1px solid #e6ac00; border-radius:5px; background: linear-gradient(#ffbf00, #ffd24d); font-family: arial; font-size: 14px; color: #262626; cursor: pointer;">Next</button>
 
 
 </div>
@@ -162,12 +164,14 @@
 
         <input class="option" type="radio" name="question9" value=1>Yes<br>
         <input class="option" type="radio" name="question9" value=-1>No<br>
-		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(9), changeImage(9)">Previous</button>
+		<br><br><button type='button' id="prevBtn" onclick="prevQuestion(9), changeImage(9)" >Previous</button>
     <button id="subBtn" onclick="submitAnswers(), changeImage(10)">Submit</button>
 
 
 
 </div>
+</div>
+</form>
 </form>
     <br>
 
